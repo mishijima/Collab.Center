@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 .home-wrapper {
@@ -15,11 +16,16 @@ html, body {
 }
 
 .wrapper {
+    height: 100%;
     padding-top: 40px;
 }
 
 .padding-top-10px {
     padding-top: 10px !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
 }
 
 .margin-top-10px {
@@ -45,6 +51,35 @@ html, body {
     -webkit-animation-duration: 1s;
 }
 
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+/* For IE 6/7 only */
+.clearfix {
+    *zoom: 1;
+}
+
+.height-100pct {
+    height: 100% !important;
+}
+
+/* Override Bootstrap */
+.container-fluid,
+.row,
+div[class*='col-'] {
+    height: 100%;
+}
+
 /* Override CodeMirror and Firepad */
 .cm-s-cobalt .CodeMirror-gutters {
     background: #4e5d6c;
@@ -57,7 +92,8 @@ html, body {
 }
 
 .firepad {
-    min-height: 800px;
+    /*min-height: 800px;*/
+    height: 100%;
 }
 
 .firepad-userlist {

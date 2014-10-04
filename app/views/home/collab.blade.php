@@ -20,8 +20,9 @@
                 </div>
               </div>
         </div>
-        <div class="col-md-10 margin-top-10px padding-top-10px">
-            <div id="firepad"></div>
+        <div class="col-md-10 no-padding-right">
+            <!-- <div style="background-color: red;"></div> -->
+            <div id="firepad" class="height-100pct"></div>
             <div class="loading"></div>
         </div>
     </div>
