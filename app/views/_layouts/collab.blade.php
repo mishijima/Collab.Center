@@ -15,6 +15,8 @@
         @yield('main')
         </div>
     </div>
+    @include('._partials.mini-side-bar')
     @include('._partials.assets-bottom')
+    {{--@include('._partials.footer')--}}
 </body>
 </html>

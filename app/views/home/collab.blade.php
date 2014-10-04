@@ -21,9 +21,11 @@
               </div>
         </div>
         <div class="col-md-10 no-padding-right">
+
             <!-- <div style="background-color: red;"></div> -->
             <div id="firepad" class="height-100pct"></div>
             <div class="loading"></div>
+            <!-- <div class="fontSize"><i class="fa fa-font fa-2x"></i></div> -->
         </div>
     </div>
 @stop

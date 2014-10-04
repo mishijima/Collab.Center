@@ -36,7 +36,7 @@
         var userId = Math.floor(Math.random() * 9999999999).toString();
 
         var firepadRef = new Firebase('https://collaborative-coding.firebaseio.com').child(padId);
-        var codeMirrorFirepad = CodeMirror(document.getElementById('firepad'), { lineWrapping: true, lineNumbers : true, theme : 'cobalt', matchBrackets : true, autoCloseBrackets : true, keyMap : "sublime"});
+        var codeMirrorFirepad = CodeMirror(document.getElementById('firepad'), { lineWrapping: true, lineNumbers : true, theme : 'eclipse', matchBrackets : true, autoCloseBrackets : true, keyMap : "sublime"});
         codeMirrorInst = codeMirrorFirepad;
         var firepad = Firepad.fromCodeMirror(firepadRef, codeMirrorFirepad, {userId: userId});
         firepadInst = firepad;
