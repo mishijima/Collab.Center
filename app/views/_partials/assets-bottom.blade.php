@@ -43,11 +43,11 @@
 
 {{-- non secure --}}
 <script src="{{ asset('assets/js/libs/jquery-2.1.1.min.js') }}"></script>
-<link href="{{ asset('assets/js/plugins/bootstrap.min.js') }}" rel="stylesheet">
+<script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins/Cookies.js') }}"></script>
 <script src="{{ asset('assets/js/plugins/dialog.js') }}"></script>
 <!-- Firebase -->
-<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
 <!-- CODEMIRROR -->
 <script src="{{ asset('assets/js/plugins/codemirror/lib/codemirror.js') }}"></script>
 <!-- Firepad -->
@@ -68,5 +68,5 @@
 <!-- Cookies Tool -->
 <script src="{{ asset('assets/js/plugins/Cookies.js') }}"></script>
 <!-- ToxBox Video -->
-<script src="{{ asset('assets/js/plugins/videoChatTokBox.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/js/plugins/videoChatTokBox.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}" defer></script>

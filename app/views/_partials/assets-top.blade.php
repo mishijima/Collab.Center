@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/plugins/codemirror/lib/codemirror.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/plugins/codemirror/theme/mdn-like.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/plugins/codemirror/theme/cobalt.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/plugins/codemirror/theme/monokai.css') }}" />
 <!-- Firepad -->
 <link rel="stylesheet" href="{{ asset('assets/css/plugins/firepad/firepad.css') }}" />
 <!--Addons-->
