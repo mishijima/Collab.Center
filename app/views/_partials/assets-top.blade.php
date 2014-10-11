@@ -1,4 +1,4 @@
-@if(!App::environment('local'))
+@if(App::environment('local'))
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:400,700,900'></link>
     <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/plugins/font-awesome/css/font-awesome.css') }}">
