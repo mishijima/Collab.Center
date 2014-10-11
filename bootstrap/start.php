@@ -24,11 +24,26 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(function() {
 
-	'local' => array('homestead'),
+    if(preg_match("/^dev.collab.center$/", $_SERVER['SERVER_NAME']))
+    {
+        return 'dev';
+    }
+    else if(preg_match("/^qa.collab.center$/", $_SERVER['SERVER_NAME']))
+    {
+        return 'qa';
+    }
+    else if(preg_match("/^collab.center$/", $_SERVER['SERVER_NAME']))
+    {
+        return 'prod';
+    }
+    else
+    {
+        return 'local';
+    }
 
-));
+});
 
 /*
 |--------------------------------------------------------------------------

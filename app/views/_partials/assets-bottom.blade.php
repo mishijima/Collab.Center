@@ -10,31 +10,38 @@
   "statcounter.com/counter/counter.js'></"+"script>");
 </script>
 <!-- End of StatCounter Code for Default Guide -->
-<script src="{{ asset('assets/js/libs/jquery-2.1.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/Cookies.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/dialog.js') }}"></script>
-<!-- Firebase -->
-<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-<!-- CODEMIRROR -->
-<script src="{{ asset('assets/js/plugins/codemirror/lib/codemirror.js') }}"></script>
-<!-- Firepad -->
-<script src="{{ asset('assets/js/plugins/firepad/firepad.js') }}"></script>
-<!-- Include userlist. -->
-<script src="{{ asset('assets/js/plugins/firepad/firepad-userlist.js') }}"></script>
-<!--Addons-->
-<script src="{{ asset('assets/js/plugins/codemirror/addon/mode/loadmode.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/addon/edit/matchbrackets.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/addon/edit/closebrackets.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/addon/search/search.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/addon/search/searchcursor.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/addon/dialog/dialog.js') }}"></script>
-<script src="{{ asset('assets/js/plugins/codemirror/keymap/sublime.js') }}"></script>
-<!-- Pusher -->
-<script src="https://js.pusher.com/2.1/pusher.min.js"></script>
-<script src="{{ asset('assets/js/plugins/PusherChatWidget.js') }}"></script>
-<!-- Cookies Tool -->
-<script src="{{ asset('assets/js/plugins/Cookies.js') }}"></script>
-<!-- ToxBox Video -->
-<script src="{{ asset('assets/js/plugins/videoChatTokBox.js') }}"></script>
-<script src="{{ asset('assets/js/main.js') }}" defer></script>
+@if(App::environment('local'))
+    <script src="{{ asset('assets/libs/jquery-2.1.1.js') }}"></script>
+    <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('assets/plugins/cookies/Cookies.js') }}"></script>
+    <!-- CODEMIRROR -->
+    <script src="{{ asset('assets/plugins/codemirror/lib/codemirror.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/dialog/dialog.js') }}"></script>
+    <!--Addons-->
+    <script src="{{ asset('assets/plugins/codemirror/addon/mode/loadmode.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/edit/matchbrackets.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/edit/closebrackets.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/search/search.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/search/searchcursor.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/addon/dialog/dialog.js') }}"></script>
+    <script src="{{ asset('assets/plugins/codemirror/keymap/sublime.js') }}"></script>
+    <!-- Firebase -->
+    <script src="{{ asset('assets/plugins/firebase/firebase.js') }}"></script>
+    <!-- Firepad -->
+    <script src="{{ asset('assets/plugins/firepad/firepad.js') }}"></script>
+    {{--<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>--}}
+    <!-- Include userlist. -->
+    <script src="{{ asset('assets/plugins/firepad/firepad-userlist.js') }}"></script>
+    <!-- Pusher -->
+    <script src="{{ asset('assets/plugins/pusher/pusher.js') }}"></script>
+    <script src="{{ asset('assets/plugins/pusher/PusherChatWidget.js') }}"></script>
+    <!-- Cookies Tool -->
+    <script src="{{ asset('assets/plugins/cookies/Cookies.js') }}"></script>
+    <!-- ToxBox Video -->
+    <script src="{{ asset('assets/plugins/misc/videoChatTokBox.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+@else
+    <script src="{{ asset('assets/js/libs/combined-libs.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/combined-plugins.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.min.js') }}"></script>
+@endif
